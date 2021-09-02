@@ -1,14 +1,7 @@
-const http = require("http");
+// const EventEmitter = require("events");
 
-const server = http.createServer((request, response) => {
-  if ((request.url == "/") | (request.url == "/home")) {
-    response.write("Home");
-    response.end();
-  } else {
-    // response.write(`Opps </br> <a href ='/'> Back Home </a>`);
-    response.end(`Opps </br> <a href ='/'> Back Home </a>`);
-  }
-});
+// const customEmitter = new EventEmitter();
 
-server.listen(5000);
-console.log(server);
+// customEmitter.on("response", (name, age) => {});
+
+// customEmitter.emit("response", "tom", 34);
